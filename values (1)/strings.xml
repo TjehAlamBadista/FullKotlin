@@ -1,0 +1,39 @@
+<resources>
+    // Auth Firebase
+    <string name="app_name">AuthFirebase</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="service">Service</string>
+    <string name="profil">Profil</string>
+
+    // Music Player
+    <string name="btn_shuffle">Shuffle</string>
+    <string name="btn_favorite">Favorite</string>
+    <string name="btn_playlist">Playlist</string>
+    <string name="world_of_music">World Of Music</string>
+    <string name="song_name">Song Name</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_favourite">Favourite</string>
+    <string name="tv_end">Loading...</string>
+    <string name="tv_start">00:00</string>
+    <string name="btn_repeat">Repeat</string>
+    <string name="btn_equalizer">Equalizer</string>
+    <string name="btn_timer">Timer</string>
+    <string name="btn_share">Share</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="app_icon">Icon</string>
+    <string name="text_nav">Welcome to \nWorld Of Music</string>
+    <string name="feedback">Feedback</string>
+    <string name="setting">Setting</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+    <string name="song_album">Song Album</string>
+
+    // Maps
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDEOmSPpD-FQtQTMWSOdBPIC_XRF660klM</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="maps_api_key">AIzaSyDEOmSPpD-FQtQTMWSOdBPIC_XRF660klM</string>
+    <string name="dialog_alert">Chamber merupakan Agent terbaru di VALORANT dengan kemampuan yang cukup unik, yaitu dirinya dapat berteleportasi, hingga memiliki senjata Sheriff dan Operator tambahan yang jauh lebih kuat.</string>
+</resources>
