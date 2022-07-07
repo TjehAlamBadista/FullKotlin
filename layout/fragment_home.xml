@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.view.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnNotifikasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notifikasi"/>
+
+        <Button
+            android:id="@+id/btnMaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maps"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/btnDrawMaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DrawMaps"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/btnLiveChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Live Chat"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/btnBottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bottom Sheet"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/btnDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date Picker"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/btnMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/btnKeranjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keranjang"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/btnRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/btnGesture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gesture"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/btnTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tab Layout"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

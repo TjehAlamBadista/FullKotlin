@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.history.view.HistoryActivity">
+
+<!--        <include-->
+<!--            android:id="@+id/toolbar"-->
+<!--            layout="@layout/toolbar_layout" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="8dp"
+            android:id="@+id/rv_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:itemCount="1"
+            tools:listitem="@layout/items_riview" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/ic_no_data"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:src="@drawable/ic_no_data"-->
+<!--            android:visibility="gone"-->
+<!--            app:layout_constraintBottom_toTopOf="@id/no_data_title"-->
+<!--            app:layout_constraintDimensionRatio="103:60"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@id/rv_recyclerView"-->
+<!--            app:layout_constraintVertical_chainStyle="packed"-->
+<!--            app:layout_constraintWidth_percent="0.6" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/no_data_title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:fontFamily="@font/lexend_semi_bold"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textColor="@color/black4F"-->
+<!--            android:visibility="gone"-->
+<!--            android:text="Saat ini belum ada transaksi"-->
+<!--            app:layout_constraintBottom_toTopOf="@id/no_data_subtitle"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/ic_no_data" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/no_data_subtitle"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="6dp"-->
+<!--            android:fontFamily="@font/lexend_regular"-->
+<!--            android:textSize="12sp"-->
+<!--            android:textColor="@color/black4F"-->
+<!--            android:visibility="gone"-->
+<!--            android:text="Transaksi kamu akan muncul disini"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/no_data_title" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
