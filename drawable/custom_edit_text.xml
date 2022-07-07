@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:topLeftRadius="15dp"
+        android:topRightRadius="5dp"
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="15sp"/>
+    <stroke android:color="@color/biru_custom"
+        android:width="2dp"/>
+</shape>
