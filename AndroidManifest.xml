@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.authfirebase">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.providers.gsf.permission.READ_GSREVICES" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:name=".service.ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AuthFirebase">
+        <activity
+            android:name=".ui.view.tablayout.TabLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.gesture.GestureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.rating.RatingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.cart.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.cart.KeranjangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.movie.MovieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.datepicker.DatePickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.bottomsheet.DialogBottomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.bottomsheet.DialogAlertActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.bottomsheet.PresistentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.bottomsheet.BottomSheetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.livechat.LiveChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.livechat.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.maps.DrawMapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.drwamaps.MapssActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDEOmSPpD-FQtQTMWSOdBPIC_XRF660klM" />
+
+        <activity
+            android:name=".ui.view.maps.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".ui.view.musicplayer.PlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.musicplayer.MusicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.UpdatePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.UpdateEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.NotifikasiActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification_image" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/purple_700" />
+
+        <activity
+            android:name=".ui.view.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.MyFireBaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MusicService" />
+
+        <receiver
+            android:name=".service.NotificationReceiver"
+            android:enabled="true" />
+    </application>
+
+</manifest>
